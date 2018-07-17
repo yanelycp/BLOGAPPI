@@ -1,0 +1,140 @@
+<html lang="en">
+<head>
+    <title>Blog APIS</title>
+   <!-- <script src="assets/js/jquery-3.3.1.min.js"></script> -->
+   <script
+   src="https://code.jquery.com/jquery-3.3.1.min.js"  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous">
+   
+  </script>  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"/></script>
+
+    <script>
+  /*      $.ajax(        
+        {
+            method: 'GET',
+            url:"http://192.168.200.63:8080/users",
+            //url:"http://127.0.0.1:8080/users",
+            headers:{'Authorization': 'Bearer a57cf1ca-22cb-4a3e-b745-6aaffcad381c'},
+            success: function(data){
+                var table = $("#tabla_usuario");               
+                 data.forEach(usuario => {                  
+                    var tr =document.createElement("tr");
+                    var tdId =document.createElement("td");
+                    var tdEmail =document.createElement("td");
+                    var tdNombre =document.createElement("td");
+
+                    tdId.textContent=usuario.id;                 
+                    tdEmail.textContent=usuario.email;
+                    tdNombre.textContent=usuario.name;
+
+                    tr.appendChild(tdId);                      
+                    tr.appendChild(tdEmail);
+                    tr.appendChild(tdNombre);
+                    table.append(tr);
+                });            
+                console.log(data);
+            }
+        });
+
+        */ /*
+window.onload=function()
+{
+    $("#logout").click(() =>
+    {
+            var token=window.localStorage.getItem("token");
+            LoginApi.logout(token)
+                .then(function (data){
+                    window.localStorage.removeItem("token");
+                    window.location="login.html";
+                })
+                .cath (err =>console.log(err));
+            }
+}*/
+/*
+$(document).ready(function () 
+{
+    $("#logout").click(() => 
+    {
+        var token = window.localStorage.getItem("token");
+        LoginApi.logout(token)
+        .then(function (data) 
+        {
+            window.localStorage.removeItem("token");
+            window.location = "login.html";
+        })
+        .catch(error => console.log(error));
+    });
+}
+
+*/
+    </script>
+</head>
+<body>
+        <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <a class="navbar-brand" href="#">BLOGGAPI</a>
+                  </div>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> </a></li>
+                  </ul>
+                </div>  
+              </nav>  
+              <div class="container">
+                   <div class="panel-group">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">Esta clase es una Bombaaaaaa!!!! <a href="#"><span class="glyphicon glyphicon-log-in"></span> </a></div> 
+                      <label>  By: </label> 
+                      <label>  Juan de Los Palotes (juang@gmail.com) </label> <a href="#" id="usuariocomentario"></a>
+                      <label style="font-style: italic">  25 de Marzo, 2018 </label>
+                      <div class="panel-body">
+                          <p>
+                              Esta clase de Javascript es una de las mejores clases que he tomado en toda mi p...... vida.
+                              Es una clase muy dinamica y relajante.
+                          </p>
+                          <div id='rate_8rt02lfjc' class='ffbs_rate'>
+                              <!--{[['<span style="color: rgb(108, 181, 216);">&#10084;</span>']]}--></div>
+                              <div id='stats_8rt02lfjc' class='ffbs_stats'></div>
+                              <script type='text/javascript' src='http://www.graddit.com/rate/eng/1/8rt02lfjc?id=rate_8rt02lfjc&stats=stats_8rt02lfjc&info=info&info_delay=1&votes=yes'></script>
+                      </div>
+                  </div>
+                  
+                  <div class="panel panel-default">
+                      <div class="panel-heading">Esta clase es una Bombaaaaaa!!!! <a href="#"><span class="glyphicon glyphicon-log-in"></span> </a></div> 
+                      <label>  By: </label> 
+                      <label>  Juan de Los Palotes (juang@gmail.com) </label> <a href="#" id="usuariocomentario"></a>
+                      <label style="font-style: italic">  25 de Marzo, 2018 </label>
+                      <div class="panel-body">
+                          <p>
+                              Esta clase de Javascript es una de las mejores clases que he tomado en toda mi p...... vida.
+                              Es una clase muy dinamica y relajante.
+                          </p>
+                          <div id='rate_8rt02lfjc' class='ffbs_rate'>
+                              <!--{[['<span style="color: rgb(108, 181, 216);">&#10084;</span>']]}--></div>
+                              <div id='stats_8rt02lfjc' class='ffbs_stats'></div>
+                              <script type='text/javascript' src='http://www.graddit.com/rate/eng/1/8rt02lfjc?id=rate_8rt02lfjc&stats=stats_8rt02lfjc&info=info&info_delay=1&votes=yes'></script>
+                      </div>
+                  </div>
+              
+                  <div class="panel panel-default">
+                      <div class="panel-heading">Esta clase es una Bombaaaaaa!!!! <a href="#"><span class="glyphicon glyphicon-log-in"></span> </a></div> 
+                      <label>  By: </label> 
+                      <label>  Juan de Los Palotes (juang@gmail.com) </label> <a href="#" id="usuariocomentario"></a>
+                      <label style="font-style: italic">  25 de Marzo, 2018 </label>
+                      <div class="panel-body">
+                          <p>
+                              Esta clase de Javascript es una de las mejores clases que he tomado en toda mi p...... vida.
+                              Es una clase muy dinamica y relajante.
+                          </p>
+                          <div id='rate_8rt02lfjc' class='ffbs_rate'>
+                              <!--{[['<span style="color: rgb(108, 181, 216);">&#10084;</span>']]}--></div>
+                              <div id='stats_8rt02lfjc' class='ffbs_stats'></div>
+                              <script type='text/javascript' src='http://www.graddit.com/rate/eng/1/8rt02lfjc?id=rate_8rt02lfjc&stats=stats_8rt02lfjc&info=info&info_delay=1&votes=yes'></script>
+                      </div>
+                  </div>
+                  </div>
+                </div>
+</body>
+</html>
